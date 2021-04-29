@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <style>
+      body {
+        /* font-family: cursive; */
+        background-color: rgb(240, 222, 199);
+      }
+      h1,
+      h3 {
+        padding: 8px;
+        font-family: cursive;
+      }
+      input,
+      button {
+        padding: 8px;
+        border-radius: 5px;
+        border: black 1px;
+        font-family: cursive;
+        box-shadow: black 0 0 3px;
+        margin-left: 5px;
+        font-size: 15px;
+      }
+      button {
+        color: white;
+        text-shadow: black 0 0 0.5px;
+        background-color: rgb(238, 186, 119);
+        transition: transform 0.2s, background-color;
+      }
+      button:hover {
+        transform: scale(1.1);
+        background-color: rgb(255, 166, 49);
+        cursor: pointer;
+      }
+      span{
+          font-family: monospace;
+      }
+      footer {
+        font-size: 15px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(85, 79, 79);
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDo List</h1>
+      <div class="forms">
+        <form action="" id="addTodo">
+          <input type="text" name="" id="todos" placeholder="New Todo" />
+          <button id="submit">Add</button>
+        </form>
+        <form action="" id="delTodo">
+          <input type="text" id="deleteItem" placeholder="Delete a Todo" />
+          <button id="delete">Delete</button>
+        </form>
+        <form action="" id="editTodo">
+          <input type="text" id="editItem" placeholder="Edit a Todo" />
+          <input type="text" name="" id="index" placeholder="Place to edit" />
+          <button id="edit">Edit</button>
+        </form>
+        <button id="reset">Reset All</button>
+        <h3>My Todos:</h3>
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <footer>
+        <p>
+            &copy; <span>Aditya 2021</span>
+        </p>
+    </footer>
+    <script src="./todoList.js"></script>
+  </body>
+</html>
